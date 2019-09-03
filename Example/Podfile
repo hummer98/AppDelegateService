@@ -1,11 +1,10 @@
 use_frameworks!
 
-target 'CloudService_Example' do
-  pod 'CloudService', :path => '../'
+target 'AppDelegateService_Example' do
+  pod 'AppDelegateService', :path => '../'
 
-  target 'CloudService_Tests' do
+  target 'AppDelegateService_Tests' do
     inherit! :search_paths
-
     
   end
 end

@@ -1,5 +1,5 @@
 import XCTest
-import CloudService
+//import AppDelegateService
 
 class Tests: XCTestCase {
     
