@@ -17,7 +17,7 @@ open class AWSCognitoService: NSObject, UIApplicationDelegate {
 
 extension AWSCognitoService {
     // TIPS: extensionに記述しないとWarningが出る
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         // Amazon Cognito 認証情報プロバイダーを初期化します
         let credentialsProvider = AWSCognitoCredentialsProvider(regionType: .APNortheast1,
                                                                 identityPoolId: identityPoolId)

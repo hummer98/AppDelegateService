@@ -8,7 +8,7 @@
 import UIKit
 import UserNotifications
 
-public class PushNotificationService: NSObject, UIApplicationDelegate {
+open class PushNotificationService: NSObject, UIApplicationDelegate {
     private var delegate: UNUserNotificationCenterDelegate?
     private var authOptions: UNAuthorizationOptions
     public typealias NotifyHandler = (UNNotificationTrigger) -> UNNotificationPresentationOptions
@@ -26,7 +26,7 @@ public class PushNotificationService: NSObject, UIApplicationDelegate {
 
 extension PushNotificationService {
     // TIPS: extensionに記述しないとWarningが出る
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         // ユーザからPush Notification通知の許可をもらう
         UNUserNotificationCenter.current().delegate = delegate ?? self
         

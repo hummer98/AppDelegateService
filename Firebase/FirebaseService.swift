@@ -11,7 +11,7 @@ import FirebaseCore
 open class FirebaseService: NSObject, UIApplicationDelegate {}
 
 extension FirebaseService {
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         FirebaseApp.configure()
         
         return true
