@@ -3,17 +3,11 @@ PODS:
     - AppDelegateService/Cognito (= 0.1.0)
     - AppDelegateService/Firebase (= 0.1.0)
     - AppDelegateService/PushNotification (= 0.1.0)
-    - AWSCognito
-    - Firebase
   - AppDelegateService/Cognito (0.1.0):
     - AWSCognito
-    - Firebase
   - AppDelegateService/Firebase (0.1.0):
-    - AWSCognito
     - Firebase
-  - AppDelegateService/PushNotification (0.1.0):
-    - AWSCognito
-    - Firebase
+  - AppDelegateService/PushNotification (0.1.0)
   - AWSCognito (2.10.3):
     - AWSCore (= 2.10.3)
   - AWSCore (2.10.3)
@@ -106,7 +100,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AppDelegateService: 873c8051b2cd5c1295f170a2d2fd47dce570fc74
+  AppDelegateService: cf809a063163de7c7048c931da5d5761692b658b
   AWSCognito: 0b1ad0f58f5eb255cf3cc2f799a0fb1ced0e74ec
   AWSCore: f9b8a30d9e8ec07d1a6dd8f0ec5fe84b6a215041
   Firebase: 291d7b0a7b393f252358083b5d224884126fa46d

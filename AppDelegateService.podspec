@@ -38,19 +38,19 @@ TODO: Add long description of the pod here.
   
   # AWS Extensions
   s.subspec 'Cognito' do |sp|
-    s.dependency 'AWSCognito'
+    sp.dependency 'AWSCognito'
     sp.source_files = 'Cognito/*.swift'
   end
   
   # Amplify Extensions
   s.subspec 'PushNotification' do |sp|
-    s.frameworks = 'UserNotifications'
+    sp.frameworks = 'UserNotifications'
     sp.source_files = 'PushNotification/*.swift'
   end
 
   # Firebase Extensions
   s.subspec 'Firebase' do |sp|
-    s.dependency 'Firebase'
+    sp.dependency 'Firebase'
     sp.source_files = 'Firebase/*.swift'
   end
 

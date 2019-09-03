@@ -46,7 +46,7 @@ AppDelegateService is available through [CocoaPods](https://cocoapods.org). To i
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'AppDelegateService'
+pod 'AppDelegateService', :git => 'https://github.com/hummer98/AppDelegateService.git'
 ```
 
 ## Author
