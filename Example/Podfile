@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CloudService_Example' do
+  pod 'CloudService', :path => '../'
+
+  target 'CloudService_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
