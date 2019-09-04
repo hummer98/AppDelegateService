@@ -27,12 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    private var services: [UIApplicationDelegate] = [AWSCognitoService(), ]
+    lazy private var services: [UIApplicationDelegate] = [
+        AWSCognitoService(identityPoolId: "Your Cognito Pool Id")
+    ]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         services.forEach {
-            let _ = $0.application? (application, didFinishLaunchingWithOptions: launchOptions)
+            let _ = $0.application?(application, didFinishLaunchingWithOptions: launchOptions)
         }
 
         return true
